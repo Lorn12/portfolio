@@ -1,0 +1,6 @@
+/* MAX-WIDTH (996PX)______________________________________________________ */
+@media (max-width: 996px) {
+  .hero-text {
+    margin-top: 3em;
+  }
+}

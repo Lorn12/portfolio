@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  --primary-color: #534ad3;
+  --secondary-color: #0e0d1b;
+  --text-color: #fff;
+  --btn-color: #f10bb2bf;
+  --default-font-family: "Montserrat", sans-serif;
+  --bottom-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+
+  font-family: var(--default-font-family);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: var(--primary-color);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+/* <!-- HERO SECTION_________________________________________________________________________________________ --> */
+
+.hero-section {
+  background: var(--primary-color);
+  text-align: center;
+  padding: 160px 20px;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  box-shadow: var(--bottom-box-shadow);
+  max-width: 100%;
+}
+
+.profile-pic {
+  width: 400px;
+  height: 400px;
+  align-items: center;
+}
+
+.hero-text {
+  margin-top: 8em;
+  font-weight: 600;
+}
+
+.socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* Icons_________________________________ */
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+.icon:hover {
+  opacity: 0.3;
+}
+
+/* BTN _________________________________ */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  color: var(--secondary-color);
+  width: 9.625rem;
+  height: 2.625rem;
+  border-radius: 3.125rem;
+  background: #ecebff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btn:hover {
+  background: rgba(241, 11, 178, 0.75);
+  filter: blur(1px);
+  color: var(--text-color);
+}
