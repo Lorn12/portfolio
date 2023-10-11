@@ -3,4 +3,63 @@
   .hero-text {
     margin-top: 3em;
   }
+
+  .about-header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .about-pic {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .text-container {
+    margin: 1em auto;
+    padding: 1em auto;
+  }
+}
+
+/* MAX-WIDTH (600PX)______________________________________________________ */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section {
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .profile-pic {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero-text {
+    margin: 2em auto;
+  }
+
+  .text__p1 {
+    margin-top: 3em;
+  }
+
+  .about-pic {
+    width: 265px;
+    height: 260px;
+  }
+
+  .details-container {
+    margin: 0.8em;
+    padding: 0.5em;
+    border-radius: 2rem;
+    border: 1px solid var(--primary-color);
+    text-align: center;
+  }
+
+  .text-container {
+    text-align: center;
+    margin: 0.8em auto;
+  }
 }
