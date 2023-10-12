@@ -294,3 +294,21 @@ article p {
 .contact-linkedin-icon {
   margin-bottom: 1.2rem;
 }
+
+/* <!-- FOOTER SECTION_________________________________________________________________________________________ --> */
+footer {
+  margin: 4em 1em;
+}
+
+footer p {
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+.footer-nav {
+  background-color: var(--secondary-color);
+}
+
+footer .nav-links {
+  background-color: var(--secondary-color);
+}
