@@ -249,4 +249,48 @@ article p {
   color: var(--secondary-color);
 }
 
-/* <!-- PROJECTS SECTION_________________________________________________________________________________________ --> */
+/* <!-- CONTACT SECTION_________________________________________________________________________________________ --> */
+.contact-section {
+  background: var(--primary-color);
+  text-align: center;
+  padding: 160px 20px;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  box-shadow: var(--bottom-box-shadow);
+  max-width: 100%;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  padding: 0.2rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.contact-info-container a {
+  color: var(--text-secondary-color);
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.contact-linkedin-icon {
+  margin-bottom: 1.2rem;
+}
