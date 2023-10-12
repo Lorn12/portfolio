@@ -3,7 +3,8 @@
 :root {
   --primary-color: #534ad3;
   --secondary-color: #0e0d1b;
-  --text-color: #fff;
+  --text-color: #ecebff;
+  --text-secondary-color: #cecce5;
   --btn-color: #f10bb2bf;
   --default-font-family: "Montserrat", sans-serif;
   --bottom-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
@@ -86,7 +87,7 @@ h1 {
   width: 9.625rem;
   height: 2.625rem;
   border-radius: 3.125rem;
-  background: #ecebff;
+  background: var(--text-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -122,12 +123,69 @@ h1 {
   text-align: center;
 }
 
-.text-container {
-  margin-top: 2em;
-  padding: 1em;
+.details-container p {
+  color: var(--text-secondary-color);
 }
 
 .text-container {
   text-align: center;
+  padding: 1em;
   margin: 1em auto;
+  margin-bottom: 3em;
+  color: var(--text-secondary-color);
+}
+
+/* <!-- EXPERIENCE SECTION_________________________________________________________________________________________ --> */
+
+.experience-section {
+  background: var(--primary-color);
+  text-align: center;
+  padding: 160px 20px;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  box-shadow: var(--bottom-box-shadow);
+  max-width: 100%;
+}
+
+.experience-details-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 1em;
+  border: 1px solid var(--text-secondary-color);
+  margin: 1em;
+  padding: 2em;
+}
+
+.experience-sub-title {
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 1.85rem;
+  margin: 1em auto;
+  margin-bottom: 1.8em;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+article p {
+  color: var(--text-secondary-color);
+  text-align: center;
 }
