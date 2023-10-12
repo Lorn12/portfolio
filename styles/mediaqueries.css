@@ -89,4 +89,19 @@
   .experience-sub-title {
     font-size: 1.25rem;
   }
+
+  .contact-info-container {
+    margin: 0.5rem;
+  }
+
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
 }
