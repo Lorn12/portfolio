@@ -131,7 +131,7 @@ h1 {
   text-align: center;
   padding: 1em;
   margin: 1em auto;
-  margin-bottom: 3em;
+  margin-bottom: 6em;
   color: var(--text-secondary-color);
 }
 
@@ -188,4 +188,63 @@ article .icon {
 article p {
   color: var(--text-secondary-color);
   text-align: center;
+}
+
+/* <!-- PROJECTS SECTION_________________________________________________________________________________________ --> */
+.project-section {
+  text-align: center;
+  padding: 4em 2em;
+}
+
+.project-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-project-containers {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.project-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-project-containers {
+  display: flex;
+}
+
+.proj-details-container {
+  margin: 1.5em;
+  padding: 1.5rem;
+  flex: 1;
+  border: 2px solid var(--primary-color);
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.project-article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: var(--text-secondary-color);
+}
+
+.project-btn {
+  color: var(--secondary-color);
 }

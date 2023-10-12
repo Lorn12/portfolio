@@ -1,3 +1,10 @@
+/* MAX-WIDTH (1400PX)______________________________________________________ */
+
+@media screen and (max-width: 1400px) {
+  .about-project-containers {
+    flex-wrap: wrap;
+  }
+}
 /* MAX-WIDTH (996PX)______________________________________________________ */
 @media (max-width: 996px) {
   .hero-text {
@@ -25,6 +32,10 @@
 @media (max-width: 600px) {
   h1 {
     font-size: 2rem;
+  }
+
+  article {
+    font-size: 1rem;
   }
 
   .hero-section {
@@ -67,5 +78,15 @@
   .experience-section {
     margin-top: 0em;
     padding-top: 4em;
+  }
+
+  .about-project-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  .experience-sub-title {
+    font-size: 1.25rem;
   }
 }
