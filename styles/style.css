@@ -109,7 +109,7 @@ h1 {
 }
 
 .about-pic {
-  margin-top: 3em;
+  margin-top: 8em;
   padding: 1em;
   width: 450px;
   height: 450px;
@@ -127,12 +127,21 @@ h1 {
   color: var(--text-secondary-color);
 }
 
+.small-img {
+  height: 3rem;
+  width: 3rem;
+}
+
 .text-container {
   text-align: center;
   padding: 1em;
   margin: 1em auto;
   margin-bottom: 6em;
   color: var(--text-secondary-color);
+  background: linear-gradient(98deg, #5a4ff5 4.88%, #e0479e 88.79%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* <!-- EXPERIENCE SECTION_________________________________________________________________________________________ --> */
@@ -264,6 +273,17 @@ article p {
   display: flex;
   justify-content: center;
   padding: 0.2rem;
+}
+
+.line {
+  margin: 0 auto;
+  max-width: 50%;
+  color: #0e0d1b;
+  background-color: #0e0d1b;
+}
+
+.line hr {
+  height: 3px;
 }
 
 .contact-info-container {
