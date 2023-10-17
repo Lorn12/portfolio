@@ -31,6 +31,7 @@
       <div class="logo">Lauren Wooten</div>
       <div>
         <ul class="nav-links desktop-nav-links">
+          <li><a href="#home">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#experience">EXPERIENCE</a></li>
           <li><a href="#project">PROJECT</a></li>
@@ -50,16 +51,17 @@
         </div>
         <!-- Will show when onclick is active -->
         <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
 
     <!-- HERO SECTION_________________________________________________________________________________________ -->
-    <div class="hero-section">
+    <div id="home" class="hero-section">
       <h2 class="text-center mb-1">
         THE DIGITAL FUTURE OF INNOVATIVE DESIGN <br />
         & FRONTEND DEVELOPMENT
