@@ -61,6 +61,7 @@ nav {
   -webkit-backdrop-filter: blur(5px);
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
+  z-index: 1;
 }
 
 .desktop-nav-links {
@@ -184,7 +185,9 @@ nav li:last-child {
 /* <!-- HERO SECTION_________________________________________________________________________________________ --> */
 
 .hero-section {
-  background: var(--primary-color);
+  background: no-repeat url("Interactive\ Spheres\ -\ Copy@1-1899x1313.png");
+  background-size: cover;
+  background-position: center;
   text-align: center;
   padding: 100px 20px 160px;
   padding-top: 200px;
@@ -194,15 +197,20 @@ nav li:last-child {
   max-width: 100%;
 }
 
-.profile-pic {
-  width: 400px;
-  height: 400px;
-  align-items: center;
+.hero-section .container {
+  border-radius: 56.33px;
+  background: linear-gradient(
+    132deg,
+    rgba(46, 51, 90, 0.2) 10.63%,
+    rgba(28, 27, 51, 0.2) 94.76%
+  );
+  backdrop-filter: blur(30.94386863708496px);
 }
 
 .hero-text {
   margin-top: 6.5em;
   font-weight: 600;
+  padding: 3em;
 }
 
 .socials-container {
