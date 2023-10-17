@@ -26,11 +26,11 @@
     <title>Lauren Wooten</title>
   </head>
   <body>
-    <!-- NAVIGATION _________________________________________________________________________________________ -->
+    <!-- NAVIGATION (DESKTOP NAVIGATION) _________________________________________________________________________________________ -->
     <nav id="desktop-nav">
       <div class="logo">Lauren Wooten</div>
       <div>
-        <ul class="nav-links">
+        <ul class="nav-links desktop-nav-links">
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#experience">EXPERIENCE</a></li>
           <li><a href="#project">PROJECT</a></li>
@@ -38,6 +38,26 @@
         </ul>
       </div>
     </nav>
+    <!-- NAVIGATION HAMBURGER MENU _________________________________________________________________________________________ -->
+    <nav id="hamburger-nav" title="hamburger-navigation">
+      <div class="logo">Lauren Wooten</div>
+      <div class="hamburger-menu">
+        <!-- Only JS function (Onclick function open/close menu) -->
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- Will show when onclick is active -->
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
     <!-- HERO SECTION_________________________________________________________________________________________ -->
     <div class="hero-section">
       <h2 class="text-center mb-1">
@@ -83,16 +103,26 @@
               >
             </div>
             <div class="socials-container">
-              <img
-                src="./imgs/linkedin_light.png"
-                alt="Lauren Wooten LinkedIn Profile"
-                class="icon linkedin-icon"
-              />
-              <img
-                src="./imgs/github_light.png"
-                alt="Lauren Wooten Github Profile"
-                class="icon github-icon"
-              />
+              <a
+                href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.linkedin.com%2F"
+                target="_blank"
+              >
+                <img
+                  src="./imgs/linkedin_light.png"
+                  alt="Lauren Wooten LinkedIn Profile"
+                  class="icon linkedin-icon"
+                />
+              </a>
+              <a
+                href="https://github.com/Lorn12"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./imgs/github_light.png"
+                  alt="Lauren Wooten Github Profile"
+                  class="icon github-icon"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -100,7 +130,7 @@
     </div>
 
     <!-- ABOUT SECTION_________________________________________________________________________________________ -->
-    <p class="text__p1 text-center mb-0">Get to know more</p>
+    <p id="about" class="text__p1 text-center mb-0">Get to know more</p>
     <h1 class="text-center about-header">About Me <br />|</h1>
     <svg
       class="mt-0 d-none d-lg-block m-auto"
@@ -188,7 +218,7 @@
       </p>
     </div>
     <!-- EXPERIENCE SECTION_________________________________________________________________________________________ -->
-    <div class="experience-section">
+    <div id="experience" class="experience-section">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience <br />|</h1>
       <svg
@@ -360,7 +390,7 @@
       </div>
     </div>
     <!-- PROJECTS SECTION_________________________________________________________________________________________ -->
-    <div class="project-section">
+    <div id="project" class="project-section">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects <br />|</h1>
       <svg
@@ -509,5 +539,6 @@
       </nav>
       <p>Copyright &#169; 2023 Lauren Wooten. all Rights Reserved</p>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>

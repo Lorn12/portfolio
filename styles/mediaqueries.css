@@ -5,7 +5,21 @@
     flex-wrap: wrap;
   }
 }
+
+/* MAX-WIDTH (1200PX)______________________________________________________ */
+
+@media screen and (max-width: 1400px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+}
+
 /* MAX-WIDTH (996PX)______________________________________________________ */
+
 @media (max-width: 996px) {
   .hero-text {
     margin-top: 3em;
@@ -28,7 +42,6 @@
 }
 
 /* MAX-WIDTH (600PX)______________________________________________________ */
-
 @media (max-width: 600px) {
   h1 {
     font-size: 2rem;
@@ -38,9 +51,14 @@
     font-size: 1rem;
   }
 
+  footer {
+    text-align: center;
+  }
+
   .hero-section {
     margin-top: 0;
     margin-bottom: 1em;
+    padding-top: 2em;
   }
 
   .profile-pic {
@@ -99,9 +117,22 @@
     font-size: 1rem;
   }
 
+  .logo {
+    font-size: 1rem;
+  }
+
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
+  }
+
+  footer .nav-links {
+    padding: 0;
+    margin-bottom: 3em;
+  }
+
+  footer .nav-links li {
+    padding: 0.2em;
   }
 }

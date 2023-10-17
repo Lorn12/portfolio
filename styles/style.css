@@ -23,6 +23,13 @@ html {
 
 a {
   text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: var(--primary-color);
 }
 
 a:hover {
@@ -35,12 +42,136 @@ h1 {
   font-size: 3rem;
 }
 
+/* DESKTOP NAV  _______________________________________________________________________ */
+nav,
+.nav-links {
+  display: flex;
+  align-items: center;
+  background: var(--primary-color);
+}
+
+nav {
+  justify-content: space-around;
+  height: 10vh;
+}
+
+.desktop-nav-links {
+  padding-top: 1rem;
+}
+
+.desktop-nav-links li:hover {
+  opacity: 0.3;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+nav li:last-child {
+  width: max-content;
+  display: flex;
+  margin: auto;
+  padding: 10px;
+}
+
+/* HAMBURGER MENU NAV  _______________________________________________________________________ */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-color);
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--primary-color);
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
 /* <!-- HERO SECTION_________________________________________________________________________________________ --> */
 
 .hero-section {
   background: var(--primary-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 100px 20px 160px;
   border-bottom-left-radius: 2em;
   border-bottom-right-radius: 2em;
   box-shadow: var(--bottom-box-shadow);
@@ -138,10 +269,10 @@ h1 {
   margin: 1em auto;
   margin-bottom: 6em;
   color: var(--text-secondary-color);
-  background: linear-gradient(98deg, #5a4ff5 4.88%, #e0479e 88.79%);
+  /* background: linear-gradient(98deg, #5a4ff5 4.88%, #e0479e 88.79%);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 /* <!-- EXPERIENCE SECTION_________________________________________________________________________________________ --> */
