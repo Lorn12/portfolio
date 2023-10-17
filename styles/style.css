@@ -47,12 +47,20 @@ nav,
 .nav-links {
   display: flex;
   align-items: center;
-  background: var(--primary-color);
 }
 
 nav {
+  position: fixed;
   justify-content: space-around;
-  height: 10vh;
+  height: 6vh;
+  width: 100%;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
 }
 
 .desktop-nav-links {
@@ -122,6 +130,13 @@ nav li:last-child {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 0.6em;
+  z-index: 1;
 }
 
 .menu-links a {
@@ -172,6 +187,7 @@ nav li:last-child {
   background: var(--primary-color);
   text-align: center;
   padding: 100px 20px 160px;
+  padding-top: 200px;
   border-bottom-left-radius: 2em;
   border-bottom-right-radius: 2em;
   box-shadow: var(--bottom-box-shadow);
@@ -228,6 +244,10 @@ nav li:last-child {
   color: var(--text-color);
 }
 /* <!-- ABOUT SECTION_________________________________________________________________________________________ --> */
+
+#about {
+  padding-top: 2em;
+}
 .text__p1 {
   margin-top: 8rem;
 }
@@ -269,10 +289,6 @@ nav li:last-child {
   margin: 1em auto;
   margin-bottom: 6em;
   color: var(--text-secondary-color);
-  /* background: linear-gradient(98deg, #5a4ff5 4.88%, #e0479e 88.79%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
 }
 
 /* <!-- EXPERIENCE SECTION_________________________________________________________________________________________ --> */
@@ -375,7 +391,7 @@ article p {
 }
 
 .project-img {
-  border-radius: 2rem;
+  border-radius: 0.6rem;
   width: 90%;
   height: 90%;
 }
@@ -454,6 +470,7 @@ footer {
 footer p {
   text-align: center;
   background-color: var(--secondary-color);
+  color: var(--text-secondary-color);
 }
 
 .footer-nav {
