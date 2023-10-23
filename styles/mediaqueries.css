@@ -22,7 +22,8 @@
 
 @media (max-width: 996px) {
   .hero-text {
-    margin-top: 3em;
+    margin: 0;
+    padding: 0;
   }
 
   .about-header {
@@ -30,16 +31,13 @@
     padding-bottom: 0;
   }
 
-  /* .about-pic {
-    margin-top: 0;
-    padding-top: 0;
-    margin: 0 auto;
-    justify-content: center;
-  } */
-
   .text-container {
     margin: 1em auto;
     padding: 1em auto;
+  }
+
+  .about-pic {
+    margin-top: 0;
   }
 }
 
@@ -60,7 +58,7 @@
   .hero-section {
     margin-top: 0;
     margin-bottom: 1em;
-    padding-top: 8em;
+    padding-top: 10em;
   }
 
   .hero-text {
@@ -74,6 +72,8 @@
   .about-pic {
     width: 365px;
     height: 360px;
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .details-container {
