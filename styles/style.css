@@ -185,7 +185,7 @@ nav li:last-child {
 /* <!-- HERO SECTION_________________________________________________________________________________________ --> */
 
 .hero-section {
-  background: no-repeat url("Interactive\ Spheres\ -\ Copy@1-1899x1313.png");
+  background: no-repeat url("/imgs/peter-rovder-X_5kMOSxLzw-unsplash.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -197,6 +197,13 @@ nav li:last-child {
   max-width: 100%;
 }
 
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
 .hero-section .container {
   border-radius: 56.33px;
   background: linear-gradient(
@@ -205,12 +212,13 @@ nav li:last-child {
     rgba(28, 27, 51, 0.2) 94.76%
   );
   backdrop-filter: blur(30.94386863708496px);
+  padding: 3rem;
 }
 
 .hero-text {
-  margin-top: 6.5em;
   font-weight: 600;
   padding: 3em;
+  padding-bottom: 0;
 }
 
 .socials-container {
@@ -247,7 +255,7 @@ nav li:last-child {
 }
 
 .btn:hover {
-  background: rgba(241, 11, 178, 0.75);
+  background: var(--primary-color);
   filter: blur(1px);
   color: var(--text-color);
 }
