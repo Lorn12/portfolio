@@ -23,17 +23,33 @@
     />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/mediaqueries.css" />
-    <title>Lauren Wooten</title>
+    <meta
+      name="description"
+      content="Lauren Wooten is a
+    Frontend Developer, UI Designer, and Visual Designer. Based in
+    Houston, TX. has passion in connecting with others and
+    transforming ideas into digital realities. Excel in crafting design
+    mockups, wireframes, and prototypes, while also establishing
+    comprehensive visual design guidelines. Beyond design, has strong
+    command of frontend development, transforms design
+    concepts into interactive, user-friendly experiences that come to life
+    on the screen—whether for your users or for your own vision."
+    />
+    <title>Lauren Wooten - Frontend Developer | UI Designer</title>
   </head>
   <body>
     <!-- NAVIGATION (DESKTOP NAVIGATION) _________________________________________________________________________________________ -->
     <nav id="desktop-nav">
-      <div class="logo">Lauren Wooten</div>
+      <div class="logo" alt="Lauren logo" title="Lauren Wooten">
+        Lauren Wooten
+      </div>
       <div>
         <ul class="nav-links desktop-nav-links">
           <li><a href="#home">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
-          <li><a href="#experience">EXPERIENCE</a></li>
+          <li>
+            <a href="#experience">EXPERIENCE</a>
+          </li>
           <li><a href="#project">PROJECT</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
@@ -51,11 +67,21 @@
         </div>
         <!-- Will show when onclick is active -->
         <div class="menu-links">
-          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <a href="#home" onclick="toggleMenu()">Home</a>
+          </li>
+          <li>
+            <a href="#about" onclick="toggleMenu()">About</a>
+          </li>
+          <li>
+            <a href="#experience" onclick="toggleMenu()">Experience</a>
+          </li>
+          <li>
+            <a href="#project" onclick="toggleMenu()">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
+          </li>
         </div>
       </div>
     </nav>
@@ -136,7 +162,7 @@
           <div class="col-lg">
             <img
               src="./imgs/about-lorn.png"
-              alt=""
+              alt="Lauren Wooten"
               class="profile-pic about-pic"
             />
           </div>
@@ -146,7 +172,7 @@
                 <div class="details-container">
                   <img
                     src="imgs/bulb-dynamic-gradient.png"
-                    alt=""
+                    alt="gradient lightbulb icon"
                     class="small-img"
                   />
                   <h3>Education</h3>
@@ -158,7 +184,7 @@
                 <div class="details-container">
                   <img
                     src="./imgs/bucket-dynamic-gradient.png"
-                    alt=""
+                    alt="gradient bucket icon"
                     class="small-img"
                   />
                   <h3>Experience</h3>
@@ -171,7 +197,7 @@
                 <div class="details-container">
                   <img
                     src="imgs/hash-dynamic-gradient.png"
-                    alt=""
+                    alt="gradient hash icon"
                     class="small-img"
                   />
                   <h3>Work</h3>
@@ -403,32 +429,32 @@
             <div class="project-article-container">
               <img
                 src="./imgs/p11.png"
-                alt="Project 1"
+                alt="maranta project"
                 title="about maranta project"
                 class="project-img"
               />
             </div>
             <h2 class="experience-sub-title project-title">Maranta Project</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.shecodes.io/graduates/76312-lauren-wooten'"
+              <a href="https://github.com/Lorn12" target="_blank">
+                <button class="btn btn-color-2 project-btn">Github</button></a
               >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.shecodes.io/workshops/shecodes-basics-c21e68f1-efd3-4700-a1e3-a18b99785abb/projects/1544208'"
+              <a
+                href="https://www.shecodes.io/workshops/shecodes-basics-c21e68f1-efd3-4700-a1e3-a18b99785abb/projects/1544208"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Live Demo
-              </button>
+                <button class="btn btn-color-2 project-btn">
+                  Live Demo
+                </button></a
+              >
             </div>
           </div>
           <div class="proj-details-container">
             <div class="project-article-container">
               <img
                 src="./imgs/p22.png"
-                alt="Project 2"
+                alt="weatherapp project"
                 title="weather project"
                 class="project-img"
               />
@@ -437,25 +463,28 @@
               WeatherApp Project
             </h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Lorn12/Vanilla-Weather-app'"
+              <a
+                href="https://github.com/Lorn12/Weather-App-SheCode-Project"
+                target="_blank"
               >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://64ab07ac0488e40008d1f307--jovial-moonbeam-f02df8.netlify.app/'"
+                <button class="btn btn-color-2 project-btn">Github</button></a
               >
-                Live Demo
-              </button>
+              <a
+                href="https://www.shecodes.io/workshops/shecodes-plus-43971a30-bdba-495a-b6bf-b0dd81d25607/projects/1741051"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="btn btn-color-2 project-btn">
+                  Live Demo
+                </button></a
+              >
             </div>
           </div>
           <div class="proj-details-container">
             <div class="project-article-container">
               <img
                 src="./imgs/p33.png"
-                alt="Project 3"
+                alt="world clock project"
                 title="world clock project"
                 class="project-img"
               />
@@ -464,19 +493,19 @@
               World Clock App Project
             </h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Lorn12/World-Clock'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://64bdab3432d7b0000792dd5c--lively-starlight-9400e9.netlify.app/'"
+              <a
+                href="https://github.com/Lorn12/World-Clock"
                 target="_blank"
+                rel="noopener noreferrer"
+                ><button class="btn btn-color-2 project-btn">Github</button></a
               >
-                Live Demo
-              </button>
+              <a
+                href="https://www.shecodes.io/workshops/shecodes-plus-add-on-4310b0fc-6e98-404c-8859-f2ea95242c6d/projects/1765304"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="btn btn-color-2 project-btn">Live Demo</button>
+              </a>
             </div>
           </div>
         </div>
@@ -507,24 +536,13 @@
             src-light="./assets/linkedin_light.png"
             alt="My LinkedIn Profile"
             class="icon contact-linkedin-icon"
-            onclick="location.href='https://linkedin.com/'"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
         </div>
       </div>
     </div>
     <!-- FOOTER SECTION_________________________________________________________________________________________ -->
     <footer>
-      <nav class="footer-nav">
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
       <p>Copyright &#169; 2023 Lauren Wooten. All Rights Reserved</p>
     </footer>
     <script src="app.js"></script>

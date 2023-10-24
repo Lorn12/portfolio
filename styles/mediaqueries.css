@@ -123,13 +123,4 @@
     gap: 0.5rem;
     text-align: center;
   }
-
-  footer .nav-links {
-    padding: 0;
-    margin-bottom: 3em;
-  }
-
-  footer .nav-links li {
-    padding: 0.2em;
-  }
 }
