@@ -63,6 +63,7 @@
 
   .hero-text {
     margin: 2em auto;
+    margin-bottom: 0;
   }
 
   .text__p1 {
