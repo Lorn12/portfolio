@@ -366,6 +366,7 @@ article p {
 .project-section {
   text-align: center;
   padding: 4em 2em;
+  padding-top: 6em;
 }
 
 .project-details-container {
